@@ -1,0 +1,255 @@
+:root {  
+}
+
+
+/*general page styling, fonts, colors, etc*/
+body {
+background-color:#ebf4d6;
+}
+
+img{
+display: block; /*image would not center correctly without this setting*/
+max-width: 75%;    
+/*height: auto;*/
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+border-radius: 4px;
+box-shadow: 0px 0px 5px 2px #1e0c08;
+}
+
+h1{
+font-family: "Caveat Brush", cursive;
+font-size: 45px;
+font-weight: 400;
+font-style: normal;
+color:#e5d7c4;
+}
+
+h2 {
+font-family: "Nanum Myeongjo", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+p {
+  display: inline-block;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 600;
+  font-style: bold;
+  color: #2d110b;
+  background-color: #e5d7c4dc;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 0px 0px 5px 2px #1e0c08;
+}
+
+a {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*parallax effect styling*/
+
+.parallax {
+  background-image: url(bmorewildimagess/gardenpath.jpeg); 
+  min-height:100vh;
+  opacity: .75;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*navbar styling*/
+.navbar {
+display:block;
+max-width: 50%;
+text-wrap: nowrap;
+display: none; /* Hide navigation links on small screens */
+margin-left: auto;
+margin-right: auto;
+}
+
+/*link styling*/
+a{
+text-decoration: none;
+color: #3C5405;
+background-color: #ebf4d6;
+padding: 5px;
+margin: 5px;
+border-radius: 4px;
+}
+
+/*hamburgermenu styling*/
+.homeicon{
+margin-left: 8px;
+margin-top: 8px;
+margin-bottom: 15px;
+background-color: #e5d7c4;
+border-radius: 4px;
+border-style: none;
+box-shadow: 0px 0px 5px 2px #1e0c08;
+}
+
+.hamburgermenu{
+top: 100%;
+left:0;
+position: relative;
+display: inline-block;
+}
+
+.hamburgermenucontent {
+position: absolute;
+top: 100%;
+left: 0;
+background: #3C5405;
+min-width: 160px;
+opacity: 0;
+transform: translateY(-10px);
+transition: all 0.3s;
+pointer-events: none;
+border-radius: 4px;
+}
+
+.hamburgermenu:hover .hamburgermenucontent {
+opacity: 1;
+transform: translateY(0);
+pointer-events: auto;
+}
+
+.hamburgermenucontent a {
+color: #3C5405;
+padding: 0.5rem 1rem;
+text-decoration: none;
+display: block;
+}
+
+.hamburgermenucontent a:hover {
+background:#3C5405;
+color: #ebf4d6;
+}
+
+/*pagetitle section styling*/
+.pagetitle{
+  display: inline-block;
+  margin-left: 8px;
+  margin-top: 25px;
+  color:#e5d7c4;
+  background-color: rgba(60,84,5,.8);
+  padding:6px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px 2px #1e0c08;
+}
+
+
+/*index image styling*/
+.indeximage{
+
+
+}
+
+/*index content container styling*/
+.introduction {
+
+padding:8px;
+margin: 4px;
+margin-top:40px;
+border-radius: 4px;
+text-align: center;
+}
+
+/*tutorial page styling*/
+.tutorialscontainer{
+display: flex;
+flex-direction: column;
+justify-content: center;}
+
+.tutorialcontent{
+background-color: #e5d7c4dc;
+box-shadow: 0px 0px 5px 2px #1e0c08;
+padding:8px;
+margin: 4px;
+margin-top:40px;
+border-radius: 4px;
+text-align: center;
+text-wrap: nowrap;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.tutorialcarousel{
+}
+
+.pagelabel{
+width: fit-content;
+background-color: #e5d7c4dc;
+color: #3C5405;
+box-shadow: 0px 0px 5px 2px #1e0c08;
+font-weight: 600;
+margin-top: 30px;
+border-radius: 4px;
+padding:8px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.tutorialitem {
+margin-top: 8px;
+margin-bottom: 8px;
+}
+
+/*plants page styling*/
+.plantcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 10px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flowercolumn, .veggiecolumn {
+    margin-bottom: 10px;
+}
+
+.pagelink{
+background-color: #3c5405cd;
+color: #e5d7c4;
+box-shadow: 0px 0px 5px 2px #1e0c08;
+}
+
+/*plant catalog styling */
+.flowerscontainer, .flowerone {
+    margin-bottom: 10px;
+}
+
+/*media queries*/
+@media (min-width: 768px) {
+    .navbar {
+        display: flex;
+        /* Center the group of links */
+        margin-left: auto; 
+    }
+
+    .hamburgermenu {
+    display: none;
+    }
+
+.tutorialscontainer{
+display: flex;
+flex-direction: row;
+justify-content: center;}
+
+    .plantcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+}
